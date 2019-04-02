@@ -1,0 +1,719 @@
+
+*** Running vivado
+    with args -log PmodOLEDCtrl.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PmodOLEDCtrl.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source PmodOLEDCtrl.tcl -notrace
+Command: synth_design -top PmodOLEDCtrl -part xc7z020clg484-3
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'charLib' is locked:
+* IP definition 'Block Memory Generator (6.2)' for IP 'charLib' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9924 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 412.125 ; gain = 100.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PmodOLEDCtrl' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/PmodOLEDCtrl.vhd:35]
+INFO: [Synth 8-3491] module 'OledInit' declared at 'C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledInit.vhd:19' bound to instance 'Init' of component 'OledInit' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/PmodOLEDCtrl.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'OledInit' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledInit.vhd:33]
+INFO: [Synth 8-3491] module 'SpiCtrl' declared at 'C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/SpiCtrl.vhd:21' bound to instance 'SPI_COMP' of component 'SpiCtrl' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledInit.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'SpiCtrl' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/SpiCtrl.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'SpiCtrl' (1#1) [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/SpiCtrl.vhd:32]
+INFO: [Synth 8-3491] module 'Delay' declared at 'C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/Delay.vhd:19' bound to instance 'DELAY_COMP' of component 'Delay' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledInit.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'Delay' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/Delay.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Delay' (2#1) [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/Delay.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'OledInit' (3#1) [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledInit.vhd:33]
+WARNING: [Synth 8-5640] Port 'reset_counter' is missing in component declaration [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/PmodOLEDCtrl.vhd:51]
+INFO: [Synth 8-3491] module 'OledEx' declared at 'C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:26' bound to instance 'Example' of component 'OledEx' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/PmodOLEDCtrl.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'OledEx' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:38]
+INFO: [Synth 8-3491] module 'SpiCtrl' declared at 'C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/SpiCtrl.vhd:21' bound to instance 'SPI_COMP' of component 'SpiCtrl' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:160]
+INFO: [Synth 8-3491] module 'Delay' declared at 'C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/Delay.vhd:19' bound to instance 'DELAY_COMP' of component 'Delay' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:171]
+INFO: [Synth 8-3491] module 'charLib' declared at 'c:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/sources_1/ip/charLib/charLib.v:39' bound to instance 'CHAR_LIB_COMP' of component 'charLib' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:179]
+INFO: [Synth 8-6157] synthesizing module 'charLib' [c:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/sources_1/ip/charLib/charLib.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'charLib' (4#1) [c:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/sources_1/ip/charLib/charLib.v:39]
+WARNING: [Synth 8-6014] Unused sequential element diego_screen_reg[3,0] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:195]
+WARNING: [Synth 8-6014] Unused sequential element diego_screen_reg[3,1] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:195]
+INFO: [Synth 8-256] done synthesizing module 'OledEx' (5#1) [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/PmodOLEDCtrl.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'PmodOLEDCtrl' (6#1) [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/PmodOLEDCtrl.vhd:35]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 473.332 ; gain = 162.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Example:RESET_COUNTER to constant 0 [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/PmodOLEDCtrl.vhd:90]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 473.332 ; gain = 162.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 473.332 ; gain = 162.059
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc]
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'leds[1]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'leds[2]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'leds[3]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'leds[4]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'leds[5]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'leds[6]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'leds[7]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:182]
+WARNING: [Vivado 12-584] No ports matched 'RESET_COUNTER'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'sws[0]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:237]
+WARNING: [Vivado 12-584] No ports matched 'sws[1]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:238]
+WARNING: [Vivado 12-584] No ports matched 'sws[2]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'sws[3]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'sws[4]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:241]
+WARNING: [Vivado 12-584] No ports matched 'sws[5]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:242]
+WARNING: [Vivado 12-584] No ports matched 'sws[6]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:243]
+WARNING: [Vivado 12-584] No ports matched 'sws[7]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:244]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:362]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:367]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:372]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc:375]
+Finished Parsing XDC File [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/PmodOLEDCtrl_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/constrs_1/new/board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PmodOLEDCtrl_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PmodOLEDCtrl_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 838.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 838.828 ; gain = 527.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 838.828 ; gain = 527.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Example/CHAR_LIB_COMP. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 838.828 ; gain = 527.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'SpiCtrl'
+INFO: [Synth 8-5544] ROM "SPI_FIN" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shift_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Delay'
+INFO: [Synth 8-5544] ROM "ms_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "temp_delay_ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,8][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,9][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,10][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,11][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,12][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,13][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,14][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,15][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,1][7:0]' into 'current_screen_reg[0,5][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,3][7:0]' into 'current_screen_reg[0,5][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,9][7:0]' into 'current_screen_reg[0,6][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,10][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,11][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,12][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,13][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,14][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,15][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,7][7:0]' into 'current_screen_reg[1,0][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,8][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,9][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,10][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,11][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,12][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,13][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,14][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,15][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,2][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,3][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,4][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,5][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,6][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,7][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,8][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,9][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,10][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,11][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,12][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,13][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,14][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,15][7:0]' into 'current_screen_reg[0,7][7:0]' [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,8] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,9] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,10] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,11] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,12] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,13] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,14] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,15] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,1] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,3] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,9] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,10] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,11] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,12] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,13] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,14] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,15] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,7] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,8] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,9] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,10] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,11] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,12] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,13] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,14] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,15] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,2] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,3] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,4] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,5] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,6] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,7] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,8] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,9] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,10] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,11] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,12] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,13] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,14] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,15] was removed.  [C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/OledExample.vhd:218]
+INFO: [Synth 8-5546] ROM "FIN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "secondCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "secondCounter2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "after_page_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "b0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "after_char_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'PmodOLEDCtrl'
+INFO: [Synth 8-5544] ROM "init_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "example_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                    send |                              001 |                              001
+                   hold1 |                              010 |                              010
+                   hold2 |                              011 |                              011
+                   hold3 |                              100 |                              100
+                   hold4 |                              101 |                              101
+                    done |                              110 |                              110
+                  iSTATE |                              111 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'SpiCtrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    hold |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'Delay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+          oledinitialize |                             0010 |                               01
+             oledexample |                             0100 |                               10
+                    done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'PmodOLEDCtrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 838.828 ; gain = 527.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 29    
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+	  30 Input     12 Bit        Muxes := 1     
+	  30 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  28 Input      8 Bit        Muxes := 1     
+	  30 Input      8 Bit        Muxes := 24    
+	   4 Input      8 Bit        Muxes := 10    
+	   2 Input      7 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	  30 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	  30 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 29    
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	  28 Input      1 Bit        Muxes := 10    
+	  30 Input      1 Bit        Muxes := 12    
+	  32 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PmodOLEDCtrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module SpiCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 1     
+Module Delay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module OledInit 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  28 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	  28 Input      1 Bit        Muxes := 10    
+Module OledEx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 26    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+	  30 Input     12 Bit        Muxes := 1     
+	  30 Input     11 Bit        Muxes := 1     
+	  30 Input      8 Bit        Muxes := 24    
+	   4 Input      8 Bit        Muxes := 10    
+	  30 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 3     
+	  30 Input      2 Bit        Muxes := 1     
+	  30 Input      1 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 2     
+	  32 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "secondCounter2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "b0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'Example/temp_delay_ms_reg[1]' (FDE) to 'Example/temp_delay_ms_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Example/temp_delay_ms_reg[2]' (FDE) to 'Example/temp_delay_ms_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,8][0]' (FDE) to 'Example/current_screen_reg[1,8][2]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,7][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,6][0]' (FDE) to 'Example/current_screen_reg[0,6][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,6][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,6][0]' (FDE) to 'Example/current_screen_reg[2,6][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,5][0]' (FDE) to 'Example/current_screen_reg[1,5][2]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,5][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,4][0]' (FDE) to 'Example/current_screen_reg[0,4][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,4][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,4][0]' (FDE) to 'Example/current_screen_reg[2,4][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,3][0]' (FDE) to 'Example/current_screen_reg[0,0][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,3][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,2][0]' (FDE) to 'Example/current_screen_reg[0,0][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,2][0]' (FDE) to 'Example/current_screen_reg[1,2][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,2][0]' (FDE) to 'Example/current_screen_reg[2,2][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,7][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,5][0]' (FDE) to 'Example/current_screen_reg[0,5][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,1][0]' (FDE) to 'Example/current_screen_reg[2,1][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,1][0]' (FDE) to 'Example/current_screen_reg[0,4][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,0][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,0][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,0][0]' (FDE) to 'Example/current_screen_reg[1,7][1]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,8][1]' (FDE) to 'Example/current_screen_reg[1,8][2]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,7][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,6][1]' (FDE) to 'Example/current_screen_reg[0,6][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,6][1]' (FDE) to 'Example/current_screen_reg[1,6][2]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,6][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,5][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,5][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,4][1]' (FDE) to 'Example/current_screen_reg[0,4][2]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,4][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,4][1]' (FDE) to 'Example/current_screen_reg[2,4][2]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,3][1]' (FDE) to 'Example/current_screen_reg[0,0][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,3][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,2][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,2][1]' (FDE) to 'Example/current_screen_reg[1,2][2]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,2][1]' (FDE) to 'Example/current_screen_reg[2,2][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,7][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,5][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,1][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,1][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,0][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,0][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,0][1]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,7][2]' (FDE) to 'Example/current_screen_reg[1,7][4]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,6][2]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,6][2]' (FDE) to 'Example/current_screen_reg[1,6][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,6][2]' (FDE) to 'Example/current_screen_reg[2,6][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,5][2]' (FDE) to 'Example/current_screen_reg[1,5][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,5][2]' (FDE) to 'Example/current_screen_reg[2,5][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,4][2]' (FDE) to 'Example/current_screen_reg[0,4][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,4][2]' (FDE) to 'Example/current_screen_reg[1,4][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,4][2]' (FDE) to 'Example/current_screen_reg[2,4][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,3][2]' (FDE) to 'Example/current_screen_reg[0,4][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,3][2]' (FDE) to 'Example/current_screen_reg[2,3][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,2][2]' (FDE) to 'Example/current_screen_reg[0,4][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,2][2]' (FDE) to 'Example/current_screen_reg[1,2][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,2][2]' (FDE) to 'Example/current_screen_reg[2,2][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,7][2]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,5][2]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,1][2]' (FDE) to 'Example/current_screen_reg[2,1][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,1][2]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,0][2]' (FDE) to 'Example/current_screen_reg[1,0][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,0][2]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,0][2]' (FDE) to 'Example/current_screen_reg[0,0][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,8][3]' (FDE) to 'Example/current_screen_reg[1,7][3]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,7][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,6][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,6][3]' (FDE) to 'Example/current_screen_reg[1,6][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,6][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,5][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,5][3]' (FDE) to 'Example/current_screen_reg[2,5][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,4][3]' (FDE) to 'Example/current_screen_reg[0,4][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,4][3]' (FDE) to 'Example/current_screen_reg[1,4][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,4][3]' (FDE) to 'Example/current_screen_reg[2,4][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,3][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,3][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,2][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,2][3]' (FDE) to 'Example/current_screen_reg[2,2][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,7][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,5][3]' (FDE) to 'Example/current_screen_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,1][3]' (FDE) to 'Example/current_screen_reg[2,1][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,1][3]' (FDE) to 'Example/current_screen_reg[0,0][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,0][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,0][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,0][3]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,8][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,7][4]' (FDE) to 'Example/current_screen_reg[1,7][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,6][4]' (FDE) to 'Example/current_screen_reg[0,6][6]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,6][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,6][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,5][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,5][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,4][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[1,4][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,4][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[2,3][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'Example/current_screen_reg[0,2][4]' (FDE) to 'Example/current_screen_reg[1,7][7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Example/\current_screen_reg[0,1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Example/\current_screen_reg[1,0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Example/\temp_delay_ms_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Example/\after_char_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Init/temp_dc_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Example/\temp_char_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Example/\temp_addr_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (Init/temp_dc_reg) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (after_char_state_reg[1]) is unused and will be removed from module OledEx.
+WARNING: [Synth 8-3332] Sequential element (temp_delay_ms_reg[11]) is unused and will be removed from module OledEx.
+WARNING: [Synth 8-3332] Sequential element (temp_char_reg[7]) is unused and will be removed from module OledEx.
+WARNING: [Synth 8-3332] Sequential element (temp_addr_reg[10]) is unused and will be removed from module OledEx.
+WARNING: [Synth 8-3332] Sequential element (current_screen_reg[0,1][5]) is unused and will be removed from module OledEx.
+WARNING: [Synth 8-3332] Sequential element (current_screen_reg[1,0][7]) is unused and will be removed from module OledEx.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 838.828 ; gain = 527.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+--------------------+---------------+----------------+
+|Module Name  | RTL Object         | Depth x Width | Implemented As | 
++-------------+--------------------+---------------+----------------+
+|OledInit     | after_state        | 32x1          | LUT            | 
+|OledInit     | after_state        | 32x5          | LUT            | 
+|OledInit     | temp_spi_data      | 32x1          | LUT            | 
+|OledEx       | after_state        | 32x1          | LUT            | 
+|OledEx       | temp_addr          | 32x1          | LUT            | 
+|OledEx       | after_state        | 32x1          | LUT            | 
+|OledEx       | temp_addr          | 32x1          | LUT            | 
+|PmodOLEDCtrl | Init/after_state   | 32x5          | LUT            | 
+|PmodOLEDCtrl | Init/after_state   | 32x1          | LUT            | 
+|PmodOLEDCtrl | Init/temp_spi_data | 32x1          | LUT            | 
++-------------+--------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 838.828 ; gain = 527.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 838.828 ; gain = 527.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 863.297 ; gain = 552.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 863.297 ; gain = 552.023
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 863.297 ; gain = 552.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 863.297 ; gain = 552.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 863.297 ; gain = 552.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 863.297 ; gain = 552.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 863.297 ; gain = 552.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |charLib       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |charLib |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |   152|
+|4     |LUT1    |    82|
+|5     |LUT2    |   116|
+|6     |LUT3    |   183|
+|7     |LUT4    |    74|
+|8     |LUT5    |   102|
+|9     |LUT6    |   403|
+|10    |MUXF7   |     5|
+|11    |FDRE    |   276|
+|12    |FDSE    |     7|
+|13    |IBUF    |     2|
+|14    |OBUF    |     6|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------+----------+------+
+|      |Instance       |Module    |Cells |
++------+---------------+----------+------+
+|1     |top            |          |  1417|
+|2     |  Example      |OledEx    |  1211|
+|3     |    DELAY_COMP |Delay_0   |    57|
+|4     |    SPI_COMP   |SpiCtrl_1 |    50|
+|5     |  Init         |OledInit  |   165|
+|6     |    DELAY_COMP |Delay     |    60|
+|7     |    SPI_COMP   |SpiCtrl   |    52|
++------+---------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 863.297 ; gain = 552.023
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 863.297 ; gain = 186.527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 863.297 ; gain = 552.023
+INFO: [Project 1-571] Translating synthesized netlist
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design charLib.ngc ...
+WARNING:NetListWriters:298 - No output is written to charLib.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file charLib.edif ...
+ngc2edif: Total memory usage is 4320844 kilobytes
+
+Reading core file 'c:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.srcs/sources_1/ip/charLib/charLib.ngc' for (cell view 'charLib', library 'work')
+Parsing EDIF File [./.ngc2edfcache/charLib_ngc_19163fbe.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/charLib_ngc_19163fbe.edif]
+INFO: [Netlist 29-17] Analyzing 160 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180321
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+203 Infos, 73 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 866.129 ; gain = 563.715
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.runs/synth_1/PmodOLEDCtrl.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PmodOLEDCtrl_utilization_synth.rpt -pb PmodOLEDCtrl_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 866.129 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 29 16:33:12 2019...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Mar 29 16:32:22 2019
+# Process ID: 7856
+# Current directory: C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.runs/synth_1
+# Command line: vivado.exe -log PmodOLEDCtrl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PmodOLEDCtrl.tcl
+# Log file: C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.runs/synth_1/PmodOLEDCtrl.vds
+# Journal file: C:/Users/agazor/agazorDropBox/Dropbox/UTU/DSP/OLED_on_ZedBoard-master/oled_display/oled_display.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PmodOLEDCtrl.tcl -notrace

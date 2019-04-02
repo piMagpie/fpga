@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="charLib">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="charLib.asy" type="asy" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib.mif" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib.ngc" type="ngc" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib.sym" type="asy" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib.v" type="verilog" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib.veo" type="veo" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib.xco" type="xco" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/example_design/bmg_wrapper.vhd" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/example_design/charLib_top.ucf" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/example_design/charLib_top.vhd" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/example_design/charLib_top.xdc" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/implement/implement.bat" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/implement/implement.sh" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/implement/planAhead_rdn.bat" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/implement/planAhead_rdn.sh" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/implement/planAhead_rdn.tcl" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/implement/xst.prj" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_ste/implement/xst.scr" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="charLib_xmdf.tcl" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+				<File name="summary.log" type="ignore" timestamp="Tue Apr 14 03:43:42 2015" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+
